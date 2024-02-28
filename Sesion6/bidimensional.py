@@ -9,9 +9,8 @@ def main():
         matriz.append([])
         for j in range(cols):
             matriz[i].append(rand.randint(0,100))
-    print(matriz[0])
-    print(matriz[1])
-    print(matriz[2])
+    for k in matriz:
+        print(k)
 
 
 if __name__=="__main__":
