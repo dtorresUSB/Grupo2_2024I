@@ -18,9 +18,11 @@ def oneLine(f):
 
 def listFile(f):
     A=f.readlines()
-    print(A)
-    print(A[0])
-    print(type(A[0]))
+    B=[]
+    for i in A:
+        B.append(i.rstrip('\n').split(','))
+    print(B[3][3])
+    return B
 
 if __name__=="__main__":
     f=open('matrizAsignacion.txt','rt')
